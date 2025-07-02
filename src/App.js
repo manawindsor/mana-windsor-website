@@ -4,15 +4,15 @@ import { MapPin, Mail, Phone, Calendar, Clock, Users, Award, Camera, X } from 'l
 // --- Helper Data ---
 // This data is now updated with the information you provided.
 const directors = [
-  { name: 'Chandra Sekhar Kancheti', title: 'President and Director', imageUrl: 'https://placehold.co/400x400/FFF0E5/333?text=C.K', bio: null },
-  { name: 'Ashwini Kancheti', title: 'Director', imageUrl: 'https://placehold.co/400x400/FFF0E5/333?text=A.K', bio: null },
-  { name: 'Mamatha Nalla', title: 'Director', imageUrl: 'https://placehold.co/400x400/FFF0E5/333?text=M.N', bio: null },
-  { name: 'Naga Ramgopal Yannam', title: 'Director', imageUrl: 'https://placehold.co/400x400/FFF0E5/333?text=N.Y', bio: null },
-  { name: 'Vinay Medavarapu', title: 'Director', imageUrl: 'https://placehold.co/400x400/FFF0E5/333?text=V.M', bio: null },
+  { name: 'Chandra Sekhar Kancheti', title: 'President and Director', imageUrl: 'Chandra Sekhar.jpeg', bio: null },
+  { name: 'Ashwini Kancheti', title: 'Director', imageUrl: 'Ashwini.jpeg', bio: null },
+  { name: 'Mamatha Nalla', title: 'Director', imageUrl: 'Mamatha.jpeg', bio: null },
+  { name: 'Naga Ramgopal Yannam', title: 'Director', imageUrl: 'Naga Ramgopal.jpeg', bio: null },
+  { name: 'Vinay Medavarapu', title: 'Director', imageUrl: 'Vinay.jpg', bio: null },
   { 
     name: 'Praveen Pataparla', 
     title: 'Director', 
-    imageUrl: 'Praveen Pataparla.jpg', // <-- Updated Image URL
+    imageUrl: 'Praveen Pataparla.jpg', 
     bio: "Praveen Pataparla is an accomplished commercial banker and business advisor with nearly two decades of international experience across the financial services landscape. He has successfully developed and managed client portfolios with revenues of up to $100 million, earning a reputation as a trusted advisor to businesses at every stage — from startups to large-scale enterprises.\n\nPraveen’s core expertise lies in trade finance, commercial lending, and financial controls, with a deep understanding of how banks evaluate loan applications and financial statements. His ability to translate complex financial data into actionable strategies has helped countless businesses secure the capital they need for growth and stability.\n\nIn addition to his technical knowledge, Praveen is known for his strengths in prospecting, lead generation, negotiation, and relationship management. These skills have consistently positioned him as a top performer in the commercial banking space, both in client acquisition and retention.\n\nAs a financial strategist, Praveen is passionate about helping businesses build sustainable financial frameworks. He regularly advises on funding options, financial planning, and improving creditworthiness — empowering leaders to make informed, strategic decisions.\n\nWith a global perspective and a hands-on approach, Praveen continues to be a driving force in shaping success stories across the financial landscape."
   },
 ];
@@ -60,12 +60,9 @@ const Header = ({ activePage, setPage }) => (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between h-20">
         <div className="flex items-center space-x-3">
-           <svg className="h-10 w-10 text-amber-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M12 2L2 7V9H4V18H20V9H22V7L12 2ZM18 16H6V9H18V16Z" fill="currentColor"/>
-             <path d="M10 10H8V12H10V10ZM16 10H14V12H16V10Z" fill="currentColor"/>
-           </svg>
+           <img src="Windsor Telugu Association logo.jpg" alt="Windsor Telugu Association Logo" className="h-14 w-14"/>
           <span className="text-lg md:text-xl font-bold text-gray-800 tracking-tight">
-            Mana Windsor Telugu Association
+            Windsor Telugu Association
           </span>
         </div>
         <nav className="hidden md:flex items-center space-x-2">
@@ -96,7 +93,7 @@ const Footer = () => (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <div>
-                    <h3 className="text-lg font-bold text-amber-400 mb-4">Mana Windsor Telugu Association</h3>
+                    <h3 className="text-lg font-bold text-amber-400 mb-4">Windsor Telugu Association</h3>
                     <p className="text-stone-300 text-sm">A non-profit organization dedicated to preserving and promoting Telugu culture, language, and heritage in the Windsor-Essex community.</p>
                 </div>
                 <div>
@@ -126,7 +123,7 @@ const Footer = () => (
                 </div>
             </div>
             <div className="mt-12 border-t border-stone-700 pt-6 text-center text-sm text-stone-400">
-                <p>&copy; {new Date().getFullYear()} Mana Windsor Telugu Association. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Windsor Telugu Association. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -175,12 +172,12 @@ const BioModal = ({ director, onClose }) => {
 
 const HomePage = ({ setPage }) => (
     <div>
-        {/* Hero Section - I will replace this image when you provide one */}
-        <div className="relative h-[60vh] min-h-[400px] bg-cover bg-center" style={{backgroundImage: "url('https://placehold.co/1600x900/FFF8E1/333?text=Mana+Windsor+Community!')"}}>
+        {/* Hero Section */}
+        <div className="relative h-[60vh] min-h-[400px] bg-cover bg-center" style={{backgroundImage: "url('Windsor Telugu Association Banner.jpg')"}}>
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center">
                 <div className="text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">Preserving Culture, Building Community</h1>
-                    <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">Welcome to the Mana Windsor Telugu Association, your home for Telugu culture, language, and traditions.</p>
+                    <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">Welcome to the Windsor Telugu Association, your home for Telugu culture, language, and traditions.</p>
                     <button onClick={() => setPage('events')} className="mt-8 px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-full transition-transform transform hover:scale-105 shadow-lg">
                         View Upcoming Events
                     </button>
@@ -194,11 +191,10 @@ const HomePage = ({ setPage }) => (
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="prose lg:prose-lg max-w-none text-gray-700">
                         <h2 className="text-3xl font-bold text-amber-800">About Our Association</h2>
-                        <p>The Mana Windsor Telugu Association (MWTA) is a vibrant, non-profit organization established to serve the Telugu-speaking community in the Windsor-Essex region. Our mission is to create a home away from home by celebrating our rich cultural heritage and fostering a strong sense of community.</p>
+                        <p>The Windsor Telugu Association (WTA) is a vibrant, non-profit organization established to serve the Telugu-speaking community in the Windsor-Essex region. Our mission is to create a home away from home by celebrating our rich cultural heritage and fostering a strong sense of community.</p>
                         <p>From celebrating major festivals like Ugadi and Sankranti to organizing cultural workshops, language classes, and community support initiatives, we strive to bring people together and pass on our traditions to the next generation.</p>
                     </div>
                     <div>
-                        {/* I can replace this image when you provide one from an event */}
                         <img src="https://placehold.co/600x400/FFF0E5/333?text=Community+Gathering" alt="Community gathering" className="rounded-lg shadow-xl"/>
                     </div>
                 </div>
