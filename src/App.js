@@ -18,10 +18,14 @@ const directors = [
 ];
 
 const galleryItems = [
-  { type: 'photo', src: 'https://placehold.co/600x400/FFC107/FFFFFF?text=Ugadi+Celebrations', alt: 'Ugadi festival celebration' },
-  { type: 'photo', src: 'https://placehold.co/600x400/E91E63/FFFFFF?text=Sankranti+Gathering', alt: 'Sankranti community gathering' },
-  { type: 'video', videoId: 'dQw4w9WgXcQ', title: 'Cultural Dance Performance' }, // Example video
-  { type: 'photo', src: 'https://placehold.co/600x400/4CAF50/FFFFFF?text=Community+Food+Drive', alt: 'Community food drive event' },
+  { type: 'photo', src: 'https://placehold.co/600x400/FFC107/FFFFFF?text=Ugadi+Photo+1', alt: 'Ugadi Celebrations' },
+  { type: 'photo', src: 'https://placehold.co/600x400/FFC107/FFFFFF?text=Ugadi+Photo+2', alt: 'Ugadi Celebrations' },
+  { type: 'photo', src: 'https://placehold.co/600x400/FFC107/FFFFFF?text=Ugadi+Photo+3', alt: 'Ugadi Celebrations' },
+  { type: 'photo', src: 'https://placehold.co/600x400/E91E63/FFFFFF?text=Sankranti+Photo+1', alt: 'Sankranti Gathering' },
+  { type: 'photo', src: 'https://placehold.co/600x400/E91E63/FFFFFF?text=Sankranti+Photo+2', alt: 'Sankranti Gathering' },
+  { type: 'photo', src: 'https://placehold.co/600x400/E91E63/FFFFFF?text=Sankranti+Photo+3', alt: 'Sankranti Gathering' },
+  { type: 'video', videoId: 'dQw4w9WgXcQ', title: 'Cultural Dance Performance #1' },
+  { type: 'video', videoId: '3JZ_D3pSS4U', title: 'Cultural Dance Performance #2' },
 ];
 
 const upcomingEvents = [
@@ -305,7 +309,7 @@ const GalleryPage = () => (
                     </div>
                 ))}
             </div>
-             <p className="text-center mt-8 text-gray-600">More photos and videos from our events will be added soon!</p>
+             <p className="text-center mt-8 text-gray-600">Please provide your photos and video links to update the gallery!</p>
         </div>
     </div>
 );
